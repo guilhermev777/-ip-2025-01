@@ -1,0 +1,22 @@
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    var horas int
+    fmt.Scan(&horas)
+
+    var valor float64
+
+    if horas <= 3 {
+        valor = float64(horas) * 5.0
+    } else {
+        grupos := horas / 3
+        resto := horas % 3
+        valor = float64(grupos*10 + resto*5)
+    }
+
+    fmt.Printf("O VALOR A PAGAR E = %.2f\n", valor)
+}
