@@ -1,0 +1,21 @@
+package main
+
+import "fmt"
+
+func main() {
+    var n int
+    fmt.Scan(&n)
+
+    for i := 1; i <= n; i++ {
+        var total int
+        var pop, ger, arq, cad float64
+        fmt.Scan(&total, &pop, &ger, &arq, &cad)
+
+        renda := (pop / 100 * float64(total) * 1) +
+                 (ger / 100 * float64(total) * 5) +
+                 (arq / 100 * float64(total) * 10) +
+                 (cad / 100 * float64(total) * 20)
+
+        fmt.Printf("A RENDA DO JOGO N. %d E = %.2f\n", i, renda)
+    }
+}
