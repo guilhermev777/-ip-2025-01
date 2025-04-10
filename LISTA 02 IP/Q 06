@@ -1,0 +1,15 @@
+package main
+import "fmt"
+
+func main() {
+    var a, b int
+  
+  fmt.Scan(&a, &b)
+  
+  if a % b == 0 {
+      fmt.Print("O n1 é divisível por n2")
+      
+  } else { 
+      fmt.Print("O n1 não é divisível por n2")
+  }
+}
